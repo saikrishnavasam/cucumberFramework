@@ -1,0 +1,47 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-27T15:55:52.280Z",
+        "line": 9,
+        "name": "Launch browser",
+        "description": "",
+        "id": "automation-test;launch-browser;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2721244300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"chrome\" with predefined options",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 5
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitions.openWithPredefinedOptions(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Precondition"
+          }
+        ]
+      }
+    ],
+    "name": "Automation test",
+    "description": "",
+    "id": "automation-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/test.feature",
+    "tags": []
+  }
+]

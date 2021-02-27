@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.206">
+    <testcase classname="Automation test" name="Launch browser" time="3.08">
+        <system-out>
+            <![CDATA[Given Open "chrome" with predefined options.................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
