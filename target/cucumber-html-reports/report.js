@@ -10,7 +10,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Precondition"
+      "name": "@UIT"
     }
   ]
 });
@@ -41,7 +41,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Precondition"
+      "name": "@UIT"
     }
   ]
 });
@@ -51,6 +51,36 @@ formatter.step({
 });
 formatter.match({
   "location": "stepDefinitions.stepDefinitions.openWithPredefinedOptions(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Navigate to automation practice and search",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@UIT"
+    }
+  ]
+});
+formatter.step({
+  "name": "navigate to automation practice",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepDefinitions.stepDefinitions.navigateToAutomationPractice()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "search for eminem",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefinitions.stepDefinitions.searchForEminem()"
 });
 formatter.result({
   "status": "passed"

@@ -21,10 +21,12 @@ public class driverFactory {
                 if (driver == null) {
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("start-maximized");
+                   // options.addArguments("--disable-plugins");
                     Map<String, Object> prefs = new HashMap<String, Object>();
                     prefs.put("download.default_directory", "src/test/resources/downloadFiles");
                     options.setExperimentalOption("prefs", prefs);
                     driver = new ChromeDriver(options);
+
                 }
         break;
             case "opera":

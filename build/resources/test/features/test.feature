@@ -1,7 +1,7 @@
 Feature: Automation test
 
 
-  @Precondition
+  @UIT
  Scenario Outline: Launch browser
   Given Open "<browser>" with predefined options
     Examples:
@@ -9,7 +9,7 @@ Feature: Automation test
       |chrome |
       #|edge   |
       #|opera  |
-  @UAT#1
+  @UIT
   Scenario: Navigate to automation practice and search
     Given navigate to automation practice
     Then search for eminem

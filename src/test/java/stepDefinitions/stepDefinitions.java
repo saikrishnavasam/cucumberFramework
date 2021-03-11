@@ -24,7 +24,7 @@ public class stepDefinitions {
     }
 
     @Then("search for eminem")
-    public void searchForEminem() throws InterruptedException {
+    public void searchForEminem() throws Exception {
         act.search();
     }
 }

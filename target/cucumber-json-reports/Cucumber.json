@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-27T15:55:52.280Z",
+        "start_timestamp": "2021-03-11T06:32:05.628Z",
         "line": 9,
         "name": "Launch browser",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2721244300,
+              "duration": 3801627600,
               "status": "passed"
             },
             "line": 6,
@@ -32,7 +32,47 @@
         ],
         "tags": [
           {
-            "name": "@Precondition"
+            "name": "@UIT"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-11T06:32:09.708Z",
+        "line": 13,
+        "name": "Navigate to automation practice and search",
+        "description": "",
+        "id": "automation-test;navigate-to-automation-practice-and-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11681429100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "navigate to automation practice",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.navigateToAutomationPractice()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4168175700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "search for eminem",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.searchForEminem()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UIT"
           }
         ]
       }

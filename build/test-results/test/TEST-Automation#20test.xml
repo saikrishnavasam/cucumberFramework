@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Automation test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-27T15:55:52" hostname="DESKTOP-P1QDTV9" time="3.201">
+<testsuite name="Automation test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-11T06:32:05" hostname="DESKTOP-P1QDTV9" time="20.023">
   <properties/>
-  <testcase name="Launch browser" classname="Automation test" time="3.201"/>
+  <testcase name="Launch browser" classname="Automation test" time="4.169"/>
+  <testcase name="Navigate to automation practice and search" classname="Automation test" time="15.854"/>
   <system-out><![CDATA[
-@Precondition
+@UIT
 Scenario Outline: Launch browser              ?[90m# src/test/resources/features/test.feature:9?[0m
   ?[32mGiven ?[0m?[32mOpen ?[0m?[32m?[1m"chrome"?[0m?[32m with predefined options?[0m ?[90m# stepDefinitions.stepDefinitions.openWithPredefinedOptions(java.lang.String)?[0m
+
+@UIT
+Scenario: Navigate to automation practice and search ?[90m# src/test/resources/features/test.feature:13?[0m
+  ?[32mGiven ?[0m?[32mnavigate to automation practice?[0m              ?[90m# stepDefinitions.stepDefinitions.navigateToAutomationPractice()?[0m
+  ?[32mThen ?[0m?[32msearch for eminem?[0m                             ?[90m# stepDefinitions.stepDefinitions.searchForEminem()?[0m
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 14471
+  <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 36881
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 27, 2021 9:25:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1615444327.590][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 11, 2021 12:02:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
